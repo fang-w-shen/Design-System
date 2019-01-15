@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - schema Design System</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+  </head>
+<body class="grid--dashboard at-design-system" id="menuCollapse" data-toggler=".menu-collapsed">
+<header id="sg-header" class="top-bar-container">
+    <a href="#" class="menu-uncollapse" data-toggle="menuCollapse">
+        <span class="icon-arrow-right"></span>
+    </a>
+    <div class="grid-container">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <a class="logo-link" href="/">
+                    <span class="icon-ascensiontech-logo branding--logo"></span>
+                </a>
+                <span>Web App Design System</span>
+            </div>
+            <div class="top-bar-right">
+            </div>
+        </div>
+    </div>
+</header><div class="container-sec-menu">
+  <div class="container-inner-menu" id="menuState" data-toggler=".menu-expanded">
+      <div class="header-menu-secondary">
+          <a href="https://github.ascension.org/pages/agroom/at-design-system/index.html">
+              <img src="assets/img/SVG/logo-schema.svg" alt="Ascension Technology schema Design System" class="at-schema-logo" />
+          </a>
+          <span class="ds-version">v.001</span>
+          <a href="#" class="menu-collapse" data-toggle="menuCollapse">
+              <span class="icon-arrow-left"></span>
+          </a>
+          <a href="#" class="menu-toggle" data-toggle="menuBar menuState">
+              <span class="icon-menu-right"></span>
+              <span data-toggler=".menuVisible" class="icon-close"></span>
+          </a>
+      </div>
+      <ul class="vertical menu accordian-menu sg-side-menu" id="menuBar" data-toggler=".expanded" data-accordion-menu data-submenu-toggle="true">
+          <li >
+              <a href="index.html">Home</a>
+          <li >
+              <a href="grid.html">Page Layout</a>
+              <ul class="menu vertical nested">
+                  <li><a  href="grid--two-column.html">2 Column</a></li>
+                  <li><a class="is-active"  href="grid--dashboard.html">Dashboard</a></li>
+                  <li><a  href="grid--sidebar.html">Sidebar</a></li>
+              </ul>
+          </li>
+          <li >
+              <a href="colors.html">Colors</a>
+          </li>
+          <li >
+              <a href="icons.html">Icons</a>
+          </li>
+          <li >
+              <a href="components.html">Components</a>
+              <ul class="menu vertical nested">
+                  <li><a  href="component--accordion.html">Accordion</a></li>
+                  <li><a  href="component--buttons.html">Buttons</a></li>
+                  <li><a  href="component--tabs.html">Tabs</a></li>
+              </ul>
+          <li >
+              <a href="resources.html">Resources</a>
+          </li>
+      </ul>
+  </div>
+</div>
+<div class="grid-container padded container-main-content" id="menu-anchor">
+  <div class="grid-x grid-margin-x">
+    <div class="large-12 cell">
+      <section class="ss-section" id="">
+        
+        <div class="grid-x layout--dashboard small-up-1 large-up-3" data-equalizer data-equalize-on="medium" id="test-eq">
+            <section class="cell cell--dashboard">
+                <div class="large-12 cell heading-container first-heading">
+                    <h3>Widget One</h3>
+                </div>
+                <div class="large-12 cell content-container" data-equalizer-watch>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam metus metus, pellentesque et pellentesque a, scelerisque blandit velit. Aliquam vel neque metus. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus quis erat quis neque commodo maximus eu auctor velit. Vestibulum scelerisque at ante et venenatis. Cras vehicula, nisi at consectetur mattis, nunc mi sagittis lectus, id faucibus risus ante ut dui. Donec dictum libero nulla, nec interdum dui dictum vitae. Donec vestibulum accumsan augue, nec tincidunt dui tincidunt at. Aenean sed nisi diam. In tristique ligula mauris, nec convallis neque euismod vitae. Aliquam gravida diam non quam pharetra, a convallis tortor convallis.
+                </div>
+            </section>
+            <section class="cell cell--dashboard">
+                <div class="large-12 cell heading-container first-heading">
+                    <h3>Widget Two</h3>
+                </div>
+                <div class="large-12 cell content-container" data-equalizer-watch>
+                    <img src="https://via.placeholder.com/150?text=PlaceholderImage" alt="placeholder image" />
+                    <p>Proin rutrum libero vitae sollicitudin suscipit. Ut quis odio in metus interdum varius. Proin at orci malesuada, posuere felis ut, tincidunt quam. Curabitur venenatis metus in mi auctor, et suscipit arcu vestibulum. Phasellus vestibulum, massa a rutrum porttitor, nunc diam vehicula arcu, quis imperdiet nisi eros non diam. Maecenas pretium nibh aliquet, pretium mi eget, fringilla neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                </div>
+            </section>
+            <section class="cell cell--dashboard">
+              <div class="large-12 cell heading-container first-heading">
+                  <h3>Widget Three</h3>
+              </div>
+              <div class="large-12 cell content-container" data-equalizer-watch>
+                  <p>Sed condimentum tristique tempor. Integer non urna condimentum, placerat neque eu, faucibus est. Morbi tristique eleifend eros ac vehicula. Fusce varius sapien sit amet lacus consequat, sed tincidunt turpis tristique. Nullam pulvinar arcu magna, id tempor est fermentum vulputate. Suspendisse venenatis leo felis, quis ullamcorper nibh efficitur non. Pellentesque vulputate ligula sit amet leo consectetur sodales. Nulla molestie mollis tempus. Aliquam erat volutpat. Maecenas sodales ultrices placerat. Proin et mauris non dolor tempus pulvinar a ut mauris. Donec varius nulla mollis metus convallis pharetra. Maecenas pretium urna ex, eget molestie enim consectetur sit amet.  
+              </div>
+          </section>
+        </div>
+        <div class="grid-x layout--dashboard small-up-1 large-up-2" data-equalizer data-equalize-on="medium" id="test-eq-2">
+            <section class="cell cell--dashboard">
+                <div class="large-12 cell heading-container first-heading">
+                    <h3>Widget Four</h3>
+                </div>
+                <div class="large-12 cell content-container" data-equalizer-watch>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam metus metus, pellentesque et pellentesque a, scelerisque blandit velit. Aliquam vel neque metus. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus quis erat quis neque commodo maximus eu auctor velit. Vestibulum scelerisque at ante et venenatis. Cras vehicula, nisi at consectetur mattis, nunc mi sagittis lectus, id faucibus risus ante ut dui. Donec dictum libero nulla, nec interdum dui dictum vitae. Donec vestibulum accumsan augue, nec tincidunt dui tincidunt at. Aenean sed nisi diam. In tristique ligula mauris, nec convallis neque euismod vitae. Aliquam gravida diam non quam pharetra, a convallis tortor convallis.
+                </div>
+            </section>
+            <section class="cell cell--dashboard">
+                <div class="large-12 cell heading-container first-heading">
+                    <h3>Widget 5</h3>
+                </div>
+                <div class="large-12 cell content-container" data-equalizer-watch>
+                    <p>Proin rutrum libero vitae sollicitudin suscipit. Ut quis odio in metus interdum varius. Proin at orci malesuada, posuere felis ut, tincidunt quam. Curabitur venenatis metus in mi auctor, et suscipit arcu vestibulum. Phasellus vestibulum, massa a rutrum porttitor, nunc diam vehicula arcu, quis imperdiet nisi eros non diam. Maecenas pretium nibh aliquet, pretium mi eget, fringilla neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+                </div>
+            </section>
+        </div>
+        <div class="grid-x layout--dashboard small-up-1 large-up-1">
+            <section class="cell cell--dashboard">
+                <div class="large-12 cell heading-container first-heading">
+                    <h3>Widget 6</h3>
+                </div>
+                <div class="large-12 cell content-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam metus metus, pellentesque et pellentesque a, scelerisque blandit velit. Aliquam vel neque metus. Aliquam erat volutpat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus quis erat quis neque commodo maximus eu auctor velit. Vestibulum scelerisque at ante et venenatis. Cras vehicula, nisi at consectetur mattis, nunc mi sagittis lectus, id faucibus risus ante ut dui. Donec dictum libero nulla, nec interdum dui dictum vitae. Donec vestibulum accumsan augue, nec tincidunt dui tincidunt at. Aenean sed nisi diam. In tristique ligula mauris, nec convallis neque euismod vitae. Aliquam gravida diam non quam pharetra, a convallis tortor convallis.
+                </div>
+            </section>
+        </div>
+        <div class="large-12 cell heading-container first-heading">
+            <h3>Code Example</h3>
+        </div>
+        <div class="large-12 cell content-container">
+          <iframe class="code-block" src="assets/code-examples/code-layout--dashboard.html" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div class="grid-container">
+      <div class="grid-x padded">
+          <section class="cell small-12 medium-6 footer-logo">
+              <a class="logo-link" href="/">
+                  <span class="icon-ascensiontech-logo branding--logo"></span>
+              </a>
+          </section>
+          <section class="cell small-12 medium-6 footer-info">
+              <p>
+                  &copy; Ascension Technologies - Schema Design System
+              </p>
+          </section>
+      </div>
+    </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+

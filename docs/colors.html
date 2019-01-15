@@ -1,0 +1,183 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors - schema Design System</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+  </head>
+<body class="colors at-design-system" id="menuCollapse" data-toggler=".menu-collapsed">
+<header id="sg-header" class="top-bar-container">
+    <a href="#" class="menu-uncollapse" data-toggle="menuCollapse">
+        <span class="icon-arrow-right"></span>
+    </a>
+    <div class="grid-container">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <a class="logo-link" href="/">
+                    <span class="icon-ascensiontech-logo branding--logo"></span>
+                </a>
+                <span>Web App Design System</span>
+            </div>
+            <div class="top-bar-right">
+            </div>
+        </div>
+    </div>
+</header><div class="container-sec-menu">
+  <div class="container-inner-menu" id="menuState" data-toggler=".menu-expanded">
+      <div class="header-menu-secondary">
+          <a href="https://github.ascension.org/pages/agroom/at-design-system/index.html">
+              <img src="assets/img/SVG/logo-schema.svg" alt="Ascension Technology schema Design System" class="at-schema-logo" />
+          </a>
+          <span class="ds-version">v.001</span>
+          <a href="#" class="menu-collapse" data-toggle="menuCollapse">
+              <span class="icon-arrow-left"></span>
+          </a>
+          <a href="#" class="menu-toggle" data-toggle="menuBar menuState">
+              <span class="icon-menu-right"></span>
+              <span data-toggler=".menuVisible" class="icon-close"></span>
+          </a>
+      </div>
+      <ul class="vertical menu accordian-menu sg-side-menu" id="menuBar" data-toggler=".expanded" data-accordion-menu data-submenu-toggle="true">
+          <li >
+              <a href="index.html">Home</a>
+          <li >
+              <a href="grid.html">Page Layout</a>
+              <ul class="menu vertical nested">
+                  <li><a  href="grid--two-column.html">2 Column</a></li>
+                  <li><a  href="grid--dashboard.html">Dashboard</a></li>
+                  <li><a  href="grid--sidebar.html">Sidebar</a></li>
+              </ul>
+          </li>
+          <li class="is-active" >
+              <a href="colors.html">Colors</a>
+          </li>
+          <li >
+              <a href="icons.html">Icons</a>
+          </li>
+          <li >
+              <a href="components.html">Components</a>
+              <ul class="menu vertical nested">
+                  <li><a  href="component--accordion.html">Accordion</a></li>
+                  <li><a  href="component--buttons.html">Buttons</a></li>
+                  <li><a  href="component--tabs.html">Tabs</a></li>
+              </ul>
+          <li >
+              <a href="resources.html">Resources</a>
+          </li>
+      </ul>
+  </div>
+</div>
+<div class="grid-container padded container-main-content" id="menu-anchor">
+  <div class="grid-x grid-margin-x">
+    <div class="large-12 cell">
+      <section class="ss-section" id="">
+        <div class="grid-x grid-margin-x">
+          <div class="large-12 cell heading-container">
+            <h1>Color Palette</h1>
+        </div>
+        
+        <div class="large-12 cell content-container">
+        <div class="grid-x grid-padding-x small-up-1 medium-up-1 large-up-3" data-equalizer data-equalize-on="medium" id="test-eq">
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                <span class="bg-primary color-swatch"></span>
+                <div class="color-title">Ascension Blue</div>
+                <code>Sass: $primary-color <br> Hex: #1B4297</code>
+              </div>
+            </div>
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                <span class="bg-secondary"></span>
+                <div class="color-title">Ascension Green</div>
+                <code>Sass: $secondary-color <br> Hex: #1AC1A9</code>
+              </div>
+            </div>
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                  <span class="bg-success"></span>
+                  <div class="color-title">Ascension Green (Tint)</div>
+                  <code>Sass: $success-color <br> Hex: #9AE3D9</code>
+              </div>
+            </div>
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                  <span class="bg-warning"></span>
+                  <div class="color-title">Canary</div>
+                  <code>Sass: $warning-color <br> Hex: #FFFFD8</code>
+              </div>
+            </div>
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                  <span class="bg-alert"></span>
+                  <div class="color-title">Crimson</div>
+                  <code>Sass: $alert-color <br> Hex: #C91733</code>
+              </div>
+            </div>
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                  <span class="bg-light-gray"></span>
+                  <div class="color-title">Light Gray</div>
+                  <code>Sass: $light-gray <br> Hex: #E6E6E6</code>
+              </div>
+            </div>
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                  <span class="bg-medium-gray"></span>
+                  <div class="color-title">Medium Gray</div>
+                  <code>Sass: $medium-gray <br> Hex: #95989A</code>
+              </div>
+            </div>
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                  <span class="bg-dark-gray"></span>
+                  <div class="color-title">Dark Gray</div>
+                  <code>Sass: $dark-gray <br> Hex: #333333</code>
+              </div>
+            </div>
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                  <span class="bg-black"></span>
+                  <div class="color-title">Black</div>
+                  <code>Sass: $black <br> Hex: #000000</code>
+              </div>
+            </div>
+            <div class="text-center cell">
+              <div class="color-block" data-equalizer-watch>
+                  <span class="bg-white"></span>
+                  <div class="color-title">White</div>
+                  <code>Sass: $white <br> Hex: #FFFFFF</code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div class="grid-container">
+      <div class="grid-x padded">
+          <section class="cell small-12 medium-6 footer-logo">
+              <a class="logo-link" href="/">
+                  <span class="icon-ascensiontech-logo branding--logo"></span>
+              </a>
+          </section>
+          <section class="cell small-12 medium-6 footer-info">
+              <p>
+                  &copy; Ascension Technologies - Schema Design System
+              </p>
+          </section>
+      </div>
+    </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+

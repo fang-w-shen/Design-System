@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'at-ds-icon';
+  src:  url('fonts/at-ds-icon.eot?n3oxkz');
+  src:  url('fonts/at-ds-icon.eot?n3oxkz#iefix') format('embedded-opentype'),
+    url('fonts/at-ds-icon.ttf?n3oxkz') format('truetype'),
+    url('fonts/at-ds-icon.woff?n3oxkz') format('woff'),
+    url('fonts/at-ds-icon.svg?n3oxkz#at-ds-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'at-ds-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ascensiontech-logo:before {
+  content: "\e919";
+}
+.icon-pencil:before {
+  content: "\e901";
+}
+.icon-calendar:before {
+  content: "\e902";
+}
+.icon-check-mark:before {
+  content: "\e903";
+}
+.icon-arrow-up:before {
+  content: "\e900";
+}
+.icon-arrow-down:before {
+  content: "\e912";
+}
+.icon-arrow-left:before {
+  content: "\e913";
+}
+.icon-arrow-right:before {
+  content: "\e914";
+}
+.icon-close:before {
+  content: "\e904";
+}
+.icon-dashboard:before {
+  content: "\e905";
+}
+.icon-help:before {
+  content: "\e906";
+}
+.icon-warning:before {
+  content: "\e907";
+}
+.icon-ascension-logo:before {
+  content: "\e908";
+}
+.icon-notification:before {
+  content: "\e909";
+}
+.icon-refund:before {
+  content: "\e90a";
+}
+.icon-search:before {
+  content: "\e90b";
+}
+.icon-triangle-up:before {
+  content: "\e90c";
+}
+.icon-triangle-down:before {
+  content: "\e915";
+}
+.icon-triangle-left:before {
+  content: "\e916";
+}
+.icon-triangle-right:before {
+  content: "\e917";
+}
+.icon-human:before {
+  content: "\e90d";
+}
+.icon-paper-plane:before {
+  content: "\e90f";
+}
+.icon-trash-can:before {
+  content: "\e910";
+}
+.icon-plus-sign:before {
+  content: "\e911";
+}
+.icon-menu-right:before {
+  content: "\e90e";
+}
+.icon-menu-left:before {
+  content: "\e918";
+}

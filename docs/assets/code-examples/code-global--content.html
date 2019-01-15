@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="/pages/agroom/at-design-system/assets/css/app.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+      body {
+        background: #ffffff !important;
+      }
+      /* This styles code blocks used for examples. */
+      .ss-code code {
+        display: block;
+        padding: 1rem;
+        overflow-x: scroll;
+      }
+      .copy-button {
+        position: fixed;
+        top: 1em;
+        right:1em;
+      }
+    </style>
+  </head>
+  <body>
+      <button class="button copy-button" data-clipboard-target="#page-1" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="true" data-click-open="false" title="Copied!">
+          Copy
+      </button>
+      <section class="ss-section" id="page-1">
+        <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-container padded container-main-content"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-x grid-margin-x"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"large-12 cell"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">section</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"{{ anchor }}"</span>&gt;</span>
+        {{content}}
+      <span class="hljs-tag">&lt;/<span class="hljs-title">section</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div>
+      </section>
+    <script src="https://github.ascension.org/pages/agroom/at-design-system/assets/js/app.js"></script>
+    <script>
+        var copyBtn = jQuery('.copy-button');
+        var clipboard = new ClipboardJS('.copy-button');
+        clipboard.on('success', function(e) {
+                  copyBtn.attr('title','Copied!').foundation('show');
+                  setTimeout(function(){
+                      copyBtn.foundation('hide');
+                  }, 3000);
+              });
+              clipboard.on('error', function(e) {
+                  copyBtn.attr('title','Copy Failed').foundation('show');
+              });
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+
+  </body>
+</html>

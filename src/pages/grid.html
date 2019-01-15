@@ -1,0 +1,129 @@
+---
+title: Grid & Layout
+---
+
+<div class="large-12 cell heading-container first-heading">
+    <h1>Introduction</h1>
+  </div>
+<div class="large-12 cell content-container">
+    <p>Schema design system is built from the Foundation framework and therefore uses the grid system. Currently, Schema uses <a href="https://foundation.zurb.com/sites/docs/xy-grid.html" target="_blank">Foundation's XY Grid</a>. It's the most modern grid system available however it does have some browser support issues. 
+    <p>
+      In this section of the Design System we will only document how to use the grid system to acheive Schema's page layouts. To learn more about the grid please visit <a href="https://foundation.zurb.com/sites/docs/xy-grid.html" title=
+      "Foundation Grid Docs">Foundation Grid Docs</a>.
+    </p>
+</div>
+
+<div class="large-12 cell heading-container">
+    <h2>Page Template Structure</h2>
+  </div>
+<div class="large-12 cell content-container">
+    <p>Schema has one basic page layout with different container options to acheieve different content layouts. Let's start with understanding the global page template</p>
+    <h3>Application Header</h3>
+    <header class="top-bar-container example">
+        <div class="grid-container">
+            <div class="top-bar">
+                <div class="title-bar" id="menuBar" data-hide-for="medium" data-toggler=".expanded">
+                    <a href="#" data-toggle="responsive-menu menuBar">
+                      <span class="icon-menu-right"></span>
+                      <span class="icon-close"></span>
+                    </a>
+                </div>
+                <div class="top-bar-left">
+                    <a class="logo-link" href="/">
+                      <span class="icon-ascensiontech-logo branding--logo"></span>
+                    </a>
+                    <span>Web App Design System</span>
+                </div>
+                <div class="top-bar-right" id="responsive-menu" data-toggler=".expanded">
+                    <ul class="menu" >
+                        <li {{#ifpage 'index'}}class="is-active" {{/ifpage}}>
+                          <a href="#">
+                            <span class="icon-dashboard"></span>One
+                          </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                              <span class="icon-dashboard"></span>Two
+                            </a>
+                        </li>
+                        <li>
+                            <ul class="dropdown menu" data-dropdown-menu data-disable-hover="true" data-click-open="true">
+                                <li>
+                                    <a href="#">
+                                      <span class="icon-human"></span>
+                                      Resources
+                                      <span class="icon-arrow-down"></span>
+                                    </a>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">schema Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Foudation Docs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Foudation Support</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                              <span class="icon-dashboard"></span>Three
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                              <span class="icon-dashboard"></span>Four
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <iframe id="code-globalHeader" class="code-block" src="assets/code-examples/code-global--header.html" frameborder="0" allowfullscreen></iframe>
+
+    <h3>Content Section</h3>
+    <p>The content code sections are a generic set of containers used to keep all inner content aligned and responsive. </p>
+    <div class="callout secondary">
+            <p><span class="icon-warning"></span> The example below has "display" classes applied to show the containers. The actual implementation does not have borders or backgrounds for the content containers.</p>
+          </div>
+    <div style="margin:0 auto; min-height: auto;" class="grid-container padded container-main-content display">
+            <div class="grid-x grid-margin-x display">
+              <div class="large-12 cell display">
+                <section class="display" id="{{ anchor }}" style="height: 4em;">
+                  {{content}}
+                </section>
+              </div>
+            </div>
+          </div>
+    <iframe class="code-block" src="assets/code-examples/code-global--content.html" frameborder="0" allowfullscreen></iframe>
+    
+    <h3>Application Footer</h3>
+    <footer class="footer">
+        <div class="grid-x padded">
+            <section class="cell small-12 medium-6 footer-logo">
+                <a class="logo-link" href="/">
+                    <span class="icon-ascensiontech-logo branding--logo"></span>
+                </a>
+            </section>
+            <section class="cell small-12 medium-6 footer-info">
+                <p>
+                    &copy; Ascension Technologies, {year} <br>
+                    Version 1.0 - Service Desk Group: {MOSTL}
+                </p>
+            </section>
+        </div>
+    </footer>
+    <iframe class="code-block" src="assets/code-examples/code-global--footer.html" frameborder="0" allowfullscreen></iframe>
+
+    <h3>Complete Page Structure</h3>
+    <p>Depending on the templating engine for our applications these HTML code examples may need to be converted to something like Razor views, Ruby, etc. It needs to be standardized, documented, distributed via the design system docs here.</p> A complete page structure will consist of these three main HTML sections with the inner HTML following the page layout details above on this page for the header, content, and footer areas.
+    <iframe class="code-block" src="assets/code-examples/code-global--complete-template.html" frameborder="0" allowfullscreen></iframe>
+  </div>
+  
+
+
+

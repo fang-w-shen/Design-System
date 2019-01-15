@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+
+    <!-- Style guide-specific CSS goes here. -->
+    <style>
+    /* This styles individual sections of the style guide */
+    .ss-section:not(:last-child) {
+      padding-bottom: 4rem;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 4rem;
+    }
+
+    /* This styles code blocks used for examples. */
+    .ss-code code {
+      display: block;
+      padding: 1rem;
+      overflow-x: scroll;
+      margin-bottom: 1.5rem;
+    }
+
+    /* This styles the example rows used in the grid documentation. */
+    .grid-x.display {
+      background: #eee;
+      font-size: 11px;
+      margin-bottom: 10px;
+      line-height: 2rem;
+      border: solid 1px #c6c6c6;
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
+      .grid-x.display .cell:nth-child(2), .grid-x.display .cell.small-centered, .grid-x.display .cell.large-centered {
+        background: #e1e1e1; }
+      .grid-x.display .cell.color-end {
+        background: #d4d4d4; }
+
+    /* This styles the color blocks used in the color documentation. */
+    .color-block {
+      padding: 8px 8px 6px;
+      color: #333;
+    }
+      .color-swatch {
+        display: block;
+      }
+      .color-block span {
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin:20px auto;
+      }
+      .ss-section h1 {
+        display: none;
+      }
+      .sg-header {
+        background-color: #1B4297;
+        color: white;
+      }
+      .branding--logo {
+        font-size:30px;
+        padding-right: 20px;
+        border-right: 1px solid white;
+        margin-right: 20px;
+      }
+      .top-bar-left {
+        display: flex;
+        align-items: center;
+      }
+      .sg-header-link {
+        color: #ffffff;
+        margin-left: 1rem;
+      }
+
+      .grid-container {
+        max-width: 1400px;
+      }
+
+      .sg-side-menu {
+        margin-left: 1rem;
+      }
+
+      .grid-container.padded {
+        padding-top: 2rem;
+      }
+
+      .sg-side-menu a {
+        transition: all 0.15s ease-in;
+      }
+
+      .sg-side-menu a:hover {
+        background: #eee;
+      }
+
+      .sg-side-menu a:focus {
+        background: #1468a0;
+        color: #fff;
+      }
+
+      .sg-side-menu.menu {
+        overflow: auto;
+        height: 100vh;
+        padding-bottom: 5rem;
+      }
+      .sg-side-menu li {
+        border-bottom: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="sg-header" class="sg-header">
+        <div class="grid-container">
+            <div class="top-bar">
+                <div class="top-bar-left align-middle">
+                    <span class="icon-icon-logo-white branding--logo"></span>
+                    <span>Ascension Web Application Style Guide</span>
+                </div>
+                <div class="top-bar-right text-right">
+                    <a class="sg-header-link" href="https://foundation.zurb.com/sites/docs/">Visit the Docs</a>
+                    <a class="sg-header-link" href="https://foundation.zurb.com/forum">Foundation Forum</a>
+                    <a class="sg-header-link" href="https://foundation.zurb.com/get-involved/support.html">Technical Support</a>
+                </div>
+              </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="grid-container padded home-content">
+      <div class="grid-x grid-margin-x" data-sticky-container>
+        {{#each pages}}  
+        <div class="large-12 cell heading-container">
+          <h1>{{ title }}</h1>
+        </div>
+        {{/each}}
+
+        <div class="large-12 cell content-container">
+            {{#each pages}}  
+            <section class="ss-section" id="{{ anchor }}">
+              {{ body }}
+            </section>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

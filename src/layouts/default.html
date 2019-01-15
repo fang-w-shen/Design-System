@@ -1,0 +1,49 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} - schema Design System</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="{{root}}assets/css/styleguide.css">
+  </head>
+<body class="{{ page }} at-design-system" id="menuCollapse" data-toggler=".menu-collapsed">
+{{> header}}
+<div class="container-sec-menu">
+  {{> navigation}}
+</div>
+<div class="grid-container padded container-main-content" id="menu-anchor">
+  <div class="grid-x grid-margin-x">
+    <div class="large-12 cell">
+      <section class="ss-section" id="{{ anchor }}">
+        {{> body}}
+      </section>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div class="grid-container">
+      <div class="grid-x padded">
+          <section class="cell small-12 medium-6 footer-logo">
+              <a class="logo-link" href="/">
+                  <span class="icon-ascensiontech-logo branding--logo"></span>
+              </a>
+          </section>
+          <section class="cell small-12 medium-6 footer-info">
+              <p>
+                  &copy; Ascension Technologies - Schema Design System
+              </p>
+          </section>
+      </div>
+    </div>
+</footer>
+<script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+

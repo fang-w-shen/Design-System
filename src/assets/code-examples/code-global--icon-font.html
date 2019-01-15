@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="/pages/agroom/at-design-system/assets/css/app.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+      body {
+        background: #ffffff !important;
+      }
+      /* This styles code blocks used for examples. */
+      .ss-code code {
+        display: block;
+        padding: 1rem;
+        overflow-x: scroll;
+      }
+      .copy-button {
+        position: fixed;
+        top: 1em;
+        right:1em;
+      }
+    </style>
+  </head>
+  <body>
+      <button class="button copy-button" data-clipboard-target="#page-1" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="true" data-click-open="false" title="Copied!">
+          Copy
+      </button>
+      <section class="ss-section" id="page-1">
+        <div class="ss-code"><pre><code class="css"><span class="hljs-at_rule">@<span class="hljs-keyword">font-face</span></span> <span class="hljs-rules">{
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">'at-ds-icon'</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">src</span>:<span class="hljs-value">  <span class="hljs-function">url</span>(<span class="hljs-string">'fonts/at-ds-icon.eot?n3oxkz'</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">src</span>:<span class="hljs-value">  <span class="hljs-function">url</span>(<span class="hljs-string">'fonts/at-ds-icon.eot?n3oxkz#iefix'</span>) <span class="hljs-function">format</span>(<span class="hljs-string">'embedded-opentype'</span>),
+    <span class="hljs-function">url</span>(<span class="hljs-string">'fonts/at-ds-icon.ttf?n3oxkz'</span>) <span class="hljs-function">format</span>(<span class="hljs-string">'truetype'</span>),
+    <span class="hljs-function">url</span>(<span class="hljs-string">'fonts/at-ds-icon.woff?n3oxkz'</span>) <span class="hljs-function">format</span>(<span class="hljs-string">'woff'</span>),
+    <span class="hljs-function">url</span>(<span class="hljs-string">'fonts/at-ds-icon.svg?n3oxkz#at-ds-icon'</span>) <span class="hljs-function">format</span>(<span class="hljs-string">'svg'</span>)</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> normal</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-style</span>:<span class="hljs-value"> normal</span></span>;
+}</span>
+
+<span class="hljs-attr_selector">[class^="icon-"]</span>, <span class="hljs-attr_selector">[class*=" icon-"]</span> <span class="hljs-rules">{
+  <span class="hljs-comment">/* use !important to prevent issues with browser extensions that change fonts */</span>
+  <span class="hljs-rule"><span class="hljs-attribute">font-family</span>:<span class="hljs-value"> <span class="hljs-string">'at-ds-icon'</span> <span class="hljs-important">!important</span></span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">speak</span>:<span class="hljs-value"> none</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-style</span>:<span class="hljs-value"> normal</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-weight</span>:<span class="hljs-value"> normal</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">font-variant</span>:<span class="hljs-value"> normal</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">text-transform</span>:<span class="hljs-value"> none</span></span>;
+  <span class="hljs-rule"><span class="hljs-attribute">line-height</span>:<span class="hljs-value"> <span class="hljs-number">1</span></span></span>;
+</span></code></pre></div>
+      </section>
+    <script src="https://github.ascension.org/pages/agroom/at-design-system/assets/js/app.js"></script>
+    <script>
+        var copyBtn = jQuery('.copy-button');
+        var clipboard = new ClipboardJS('.copy-button');
+        clipboard.on('success', function(e) {
+                  copyBtn.attr('title','Copied!').foundation('show');
+                  setTimeout(function(){
+                      copyBtn.foundation('hide');
+                  }, 3000);
+              });
+              clipboard.on('error', function(e) {
+                  copyBtn.attr('title','Copy Failed').foundation('show');
+              });
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,60 @@
+---
+title: Buttons
+---
+<div class="grid-x grid-margin-x">
+  <div class="large-12 cell heading-container">
+    <h1>Buttons</h1>
+</div>
+<div class="large-12 cell content-container">
+    <h2 id="buttons-Usage">Usage</h2>
+    <p>Users navigate through a site or application using links but not all links are conceptually the same. Normal text links are for navigating and do not have any side-effects, it is simply for going from page to page. Other links are used to create a specific effect such as starting/ending a process or committing something to a database. For example, starting a search in a Search Box, ordering a product, submitting a money transfer and so on. Such links are actions important because they can cause side-effects that cannot be undone easily or because they have other consequences for the users. It is in these specific cases that we use buttons.</p>
+
+    <p>It is vital that we do not confuse visually or with interaction the difference between buttons and links.</p>
+
+    <h2 id="buttons-Content">Content</h2>
+    <p>The content within a button can be text, an icon, or an icon and text together.</p>
+
+      <p>A button visually stands out in the view and is easily distinguishable from a text link. It therefore attracts more attention than simple text link and suggests an "action" because of it's "button" affordance. The button can be a standard system button but more frequently it is more of a graphic that fits in with the overall page design. The button should be colored using a different color than the background color used in the view so that it stands out sufficiently. Make sure that the button is not too small. The larger they are, the easier it is to select them.</p>
+      
+      <p><strong>Use verbs in titles.</strong> An action-specific title shows that a button is interactive and says what happens when you tap it.</p>
+      <p><strong>Use title-case for titles.</strong> Capitalize every word except articles, coordinating conjunctions, and prepositions of four or fewer letters.</p>
+      <p><strong>Keep titles short.</strong> Overly long text can crowd your interface and may get truncated on smaller screens.</p>
+
+      <h2 id="buttons-Behavior">Behavior</h2>
+      <p>A button can trigger an action either on the current screen, or it can perform an action that creates a new screen. Buttons should behave based on user interaction and utilize states to communicate to the user.</p>
+      <ul>
+        <li>On desktop and laptop devices the mouse cursor should change to the hand icon when the user hovers over the button.</li>
+        <li>On desktop and laptop devices the button can have a hover state in which the visual styles of the button changes when the mouse cursor passes over it.</li>
+        <li>For all devices types an active or tap state can be applied in which the visual styles of a button change when the user clicks or taps on a button.</li>
+        <li>Use the button tag if the button performs an action that changes something on the current page. Button elements almost always require JavaScript to function.</li>
+      </ul> 
+      <h2 id="buttons-Accessibility">Accessibility</h2>
+      <p>Make sure that the text of the button is descriptive. If for some reason, your button contains no readable text (for example, just a symbol or icon), add screen reader-only text to the button to clarify its purpose. The symbol or icon should be wrapped in an element with the attribute aria-hidden="true", to prevent screen readers from trying to pronounce the symbol.</p>
+      <p>Use the .show-for-sr class to define screen reader-only text.</p>
+
+</div>
+
+<div class="large-12 cell heading-container">
+    <h1>Examples</h1>
+</div>
+<div class="large-12 cell content-container">
+  <button class="button secondary" href="#">Default</button>
+  <button class="button button-icon-left secondary" href="#">
+    <span aria-hidden="true" class="icon-arrow-left"></span> 
+    Left Icon
+  </button>
+  <button class="button button-icon-right secondary" href="#">
+    Right Icon 
+    <span aria-hidden="true" class="icon-arrow-right"></span>
+  </button>
+  <button class="button alert" href="#">Alert</button>
+  <button type="button" class="button secondary" disabled>Disabled</button>
+  <button class="button expanded secondary" href="#">Expanded</button>
+</div>
+  <div class="large-12 cell heading-container first-heading">
+      <h3>Code Example</h3>
+  </div>
+  <div class="large-12 cell content-container">
+    <iframe class="code-block" src="assets/code-examples/code-component--buttons.html" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>

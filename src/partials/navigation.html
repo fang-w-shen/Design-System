@@ -1,0 +1,43 @@
+<div class="container-inner-menu" id="menuState" data-toggler=".menu-expanded">
+    <div class="header-menu-secondary">
+        <a href="https://github.ascension.org/pages/agroom/at-design-system/index.html">
+            <img src="assets/img/SVG/logo-schema.svg" alt="Ascension Technology schema Design System" class="at-schema-logo" />
+        </a>
+        <span class="ds-version">v.001</span>
+        <a href="#" class="menu-collapse" data-toggle="menuCollapse">
+            <span class="icon-arrow-left"></span>
+        </a>
+        <a href="#" class="menu-toggle" data-toggle="menuBar menuState">
+            <span class="icon-menu-right"></span>
+            <span data-toggler=".menuVisible" class="icon-close"></span>
+        </a>
+    </div>
+    <ul class="vertical menu accordian-menu sg-side-menu" id="menuBar" data-toggler=".expanded" data-accordion-menu data-submenu-toggle="true">
+        <li {{#ifpage 'index'}}class="is-active" {{/ifpage}}>
+            <a href="index.html">Home</a>
+        <li {{#ifpage 'grid'}}class="is-active" {{/ifpage}}>
+            <a href="grid.html">Page Layout</a>
+            <ul class="menu vertical nested">
+                <li><a {{#ifpage 'grid--two-column'}}class="is-active" {{/ifpage}} href="grid--two-column.html">2 Column</a></li>
+                <li><a {{#ifpage 'grid--dashboard'}}class="is-active" {{/ifpage}} href="grid--dashboard.html">Dashboard</a></li>
+                <li><a {{#ifpage 'grid--sidebar'}}class="is-active" {{/ifpage}} href="grid--sidebar.html">Sidebar</a></li>
+            </ul>
+        </li>
+        <li {{#ifpage 'colors'}}class="is-active" {{/ifpage}}>
+            <a href="colors.html">Colors</a>
+        </li>
+        <li {{#ifpage 'icons'}}class="is-active" {{/ifpage}}>
+            <a href="icons.html">Icons</a>
+        </li>
+        <li {{#ifpage 'components'}}class="is-active" {{/ifpage}}>
+            <a href="components.html">Components</a>
+            <ul class="menu vertical nested">
+                <li><a {{#ifpage 'component--accordion'}}class="is-active" {{/ifpage}} href="component--accordion.html">Accordion</a></li>
+                <li><a {{#ifpage 'component--buttons'}}class="is-active" {{/ifpage}} href="component--buttons.html">Buttons</a></li>
+                <li><a {{#ifpage 'component--tabs'}}class="is-active" {{/ifpage}} href="component--tabs.html">Tabs</a></li>
+            </ul>
+        <li {{#ifpage 'resources'}}class="is-active" {{/ifpage}}>
+            <a href="resources.html">Resources</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,74 @@
+---
+title: Accordion
+---
+<div class="grid-x grid-margin-x">
+  <div class="large-12 cell heading-container">
+    <h1>Accordions</h1>
+</div>
+<div class="large-12 cell content-container">
+
+    <h2 id="AccordionMenu-Usage">Usage</h2>
+    <p>An accordion menu is useful for compressing many elements in a compact space. The downside is, of course, that most items get hidden which may not be very desirable when you use accordions navigation.</p>
+    <ul>
+      <li>Use when you want the benefits of a normal sidebar menu, but do not have the space to list all options.</li>
+      <li>Use when there are more than 2 main sections on a website each with 2 or more subsections.</li>
+      <li>Use when you have less than 10 main sections</li>
+      <li>Use when you only have two levels to show in the main navigation.</li>
+      <li>Do not nest over two levels deep.</li>
+    </ul>
+    <h2 id="AccordionMenu-Accessibility">Accessibility</h2>
+    <p>While accordions sound ideal for presenting complex content, like with many other components and patterns, they are not a one-size-fits-all solution. There are major downsides to accordions.</p>
+    <ul>
+      <li>Forcing people to click on headings one at a time to display full content can be cumbersome, especially if there mare many topics on the list that individuals care about. If people need to open the majority of subtopics to have their questions answered or to get the full story then an accordion is not the way to go. In this situation, it’s better to expose all the content at once. It is easier to scroll down the page than to decide which heading to click on. (Every single decision, no matter how minor or how easy, adds cognitive load.) The experience feels less fragmented with fewer attention switches.</li>
+    </ul>
+    <ul>
+      <li>Accordions increase interaction cost. Readers treat clicks like currency: they don’t mind spending it if the click is worthwhile and has value. However, resentment ensues when a click is considered a wasted effort; it doesn’t take many wasted clicks to escalate people’s reaction to full-blown defiance. Acquiring click targets, such as links and buttons, and waiting for content to appear requires work and wastes precious time that users don’t want to give.</li>
+    </ul>
+    <ul>
+      <li>Hiding content behind navigation diminishes people’s awareness of it. An extra step is required to see the information. Headings and titles must be descriptive and enticing enough to motivate people to “spend” clicks on them. When content is hidden, people might ignore information.</li>
+    </ul>
+    <ul>
+      <li>Accessibility is an important consideration. Pages and widgets must be coded with accessibility in mind, which is an added development effort. In contrast, plain text is inherently accessible (though it can definitely be too complicated for disabled users to understand, but that’s a standard writing issue which you should consider in any case.)</li>
+      <li>
+        <p>Printing is another consideration that a reader correctly points out. Accordions are often not well suited for printing documents and require people to print snippets of content at a time. Make sure to optimize your pages for printing.</p>
+      </li>
+    </ul>
+</div>
+
+<div class="large-12 cell heading-container">
+    <h1>Example</h1>
+</div>
+<div class="large-12 cell content-container">
+<ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
+    <li class="accordion-item" data-accordion-item>
+      <!-- Accordion tab title -->
+      <a href="#" class="accordion-title">Accordion 1</a>
+      <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+      <div class="accordion-content" data-tab-content>
+        <p>Panel 1. Lorem ipsum dolor</p>
+        <a href="#">Nowhere to Go</a>
+      </div>
+    </li>
+    <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title">Accordion 2</a>
+        <div class="accordion-content" data-tab-content>
+          <p>Panel 2. Lorem ipsum dolor</p>
+          <a href="#">Nowhere to Go</a>
+        </div>
+      </li>
+      <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 3</a>
+          <div class="accordion-content" data-tab-content>
+            <p>Panel 2. Lorem ipsum dolor</p>
+            <a href="#">Nowhere to Go</a>
+          </div>
+        </li>
+    </ul>
+  </div>
+  <div class="large-12 cell heading-container first-heading">
+      <h3>Code Example</h3>
+  </div>
+  <div class="large-12 cell content-container">
+    <iframe class="code-block" src="assets/code-examples/code-component--accordion.html" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs - schema Design System</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+  </head>
+<body class="component--tabs at-design-system" id="menuCollapse" data-toggler=".menu-collapsed">
+<header id="sg-header" class="top-bar-container">
+    <a href="#" class="menu-uncollapse" data-toggle="menuCollapse">
+        <span class="icon-arrow-right"></span>
+    </a>
+    <div class="grid-container">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <a class="logo-link" href="/">
+                    <span class="icon-ascensiontech-logo branding--logo"></span>
+                </a>
+                <span>Web App Design System</span>
+            </div>
+            <div class="top-bar-right">
+            </div>
+        </div>
+    </div>
+</header><div class="container-sec-menu">
+  <div class="container-inner-menu" id="menuState" data-toggler=".menu-expanded">
+      <div class="header-menu-secondary">
+          <a href="https://github.ascension.org/pages/agroom/at-design-system/index.html">
+              <img src="assets/img/SVG/logo-schema.svg" alt="Ascension Technology schema Design System" class="at-schema-logo" />
+          </a>
+          <span class="ds-version">v.001</span>
+          <a href="#" class="menu-collapse" data-toggle="menuCollapse">
+              <span class="icon-arrow-left"></span>
+          </a>
+          <a href="#" class="menu-toggle" data-toggle="menuBar menuState">
+              <span class="icon-menu-right"></span>
+              <span data-toggler=".menuVisible" class="icon-close"></span>
+          </a>
+      </div>
+      <ul class="vertical menu accordian-menu sg-side-menu" id="menuBar" data-toggler=".expanded" data-accordion-menu data-submenu-toggle="true">
+          <li >
+              <a href="index.html">Home</a>
+          <li >
+              <a href="grid.html">Page Layout</a>
+              <ul class="menu vertical nested">
+                  <li><a  href="grid--two-column.html">2 Column</a></li>
+                  <li><a  href="grid--dashboard.html">Dashboard</a></li>
+                  <li><a  href="grid--sidebar.html">Sidebar</a></li>
+              </ul>
+          </li>
+          <li >
+              <a href="colors.html">Colors</a>
+          </li>
+          <li >
+              <a href="icons.html">Icons</a>
+          </li>
+          <li >
+              <a href="components.html">Components</a>
+              <ul class="menu vertical nested">
+                  <li><a  href="component--accordion.html">Accordion</a></li>
+                  <li><a  href="component--buttons.html">Buttons</a></li>
+                  <li><a class="is-active"  href="component--tabs.html">Tabs</a></li>
+              </ul>
+          <li >
+              <a href="resources.html">Resources</a>
+          </li>
+      </ul>
+  </div>
+</div>
+<div class="grid-container padded container-main-content" id="menu-anchor">
+  <div class="grid-x grid-margin-x">
+    <div class="large-12 cell">
+      <section class="ss-section" id="">
+        <div class="grid-x grid-margin-x">
+          <div class="large-12 cell heading-container">
+            <h1>Tabs</h1>
+        </div>
+        <div class="large-12 cell content-container">
+            <h2 id="tabs-Usage">Usage</h2>
+            <p>A tab view presents multiple mutually exclusive panes of content in the same area. A tab view includes a tabbed control (which is similar in appearance to a segmented control and a content area. Each segment of a tabbed control is known as a tab, and clicking a tab displays its corresponding pane in the content area. Although the amount of content can vary from pane to pane, switching tabs doesn’t change the overall size of the tab view or its parent window.</p>
+            <ul>
+              <li>Use when there is limited visual space and content needs to be separated into sections.</li>
+                  <li>Use when there are between 2 – 9 sections of content that need a flat navigation mode.</li>
+                  <li>Use when you need to keep user attention by circumventing page refreshing.</li>
+                  <li>Use when section names are relatively short.</li>
+                  <li>Use when the content of each tab can be viewed separate from each other, and not in context of each other.</li>
+                  <li>Use when the content for each tab has similar structure.</li>
+                  <li>Use when you need to show what tab is currently being viewed.</li>
+                  <li>Do not use when the content inside each pane would function just as well in its own separate page.</li>
+            </ul>
+            <h2 id="tabs-Usage">Usage</h2>
+            <p>A tab view presents multiple mutually exclusive panes of content in the same area. A tab view includes a tabbed control (which is similar in appearance to a segmented control and a content area. Each segment of a tabbed control is known as a tab, and clicking a tab displays its corresponding pane in the content area. Although the amount of content can vary from pane to pane, switching tabs doesn’t change the overall size of the tab view or its parent window.</p>
+            <ul>
+              <li>Use when there is limited visual space and content needs to be separated into sections.</li>
+                  <li>Use when there are between 2 – 9 sections of content that need a flat navigation mode.</li>
+                  <li>Use when you need to keep user attention by circumventing page refreshing.</li>
+                  <li>Use when section names are relatively short.</li>
+                  <li>Use when the content of each tab can be viewed separate from each other, and not in context of each other.</li>
+                  <li>Use when the content for each tab has similar structure.</li>
+                  <li>Use when you need to show what tab is currently being viewed.</li>
+                  <li>Do not use when the content inside each pane would function just as well in its own separate page.</li>
+            </ul>
+          
+        </div>
+        
+        <div class="large-12 cell heading-container">
+            <h1>Example</h1>
+        </div>
+        <div class="large-12 cell content-container">
+            <ul class="tabs" data-tabs id="example-tabs">
+                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+                <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
+                <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Tab 3</a></li>
+              </ul>
+            <div class="tabs-content" data-tabs-content="example-tabs">
+                <div class="tabs-panel is-active" id="panel1">
+                  <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                </div>
+                <div class="tabs-panel" id="panel2">
+                  <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                </div>
+                <div class="tabs-panel" id="panel3">
+                    <p>Tab number three content~!</p>
+                  </div>
+              </div>
+          </div>
+          <div class="large-12 cell heading-container first-heading">
+              <h3>Code Example</h3>
+          </div>
+          <div class="large-12 cell content-container">
+            <iframe class="code-block" src="assets/code-examples/code-component--tabs.html" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+    <div class="grid-container">
+      <div class="grid-x padded">
+          <section class="cell small-12 medium-6 footer-logo">
+              <a class="logo-link" href="/">
+                  <span class="icon-ascensiontech-logo branding--logo"></span>
+              </a>
+          </section>
+          <section class="cell small-12 medium-6 footer-info">
+              <p>
+                  &copy; Ascension Technologies - Schema Design System
+              </p>
+          </section>
+      </div>
+    </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+

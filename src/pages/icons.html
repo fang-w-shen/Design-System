@@ -1,0 +1,211 @@
+---
+title: Icons
+---
+
+<div class="grid-x grid-margin-x">
+  <div class="large-12 cell heading-container">
+    <h1>Icon Workflow</h1>
+  </div>
+  <div class="large-12 cell content-container">
+      <div class="grid-x grid-padding-x small-up-1 medium-up-1 large-up-2 x-large-up-4 at-icon-anatomy">
+          <div class="text-center cell">
+              <img class="vector-icon" src="assets/img/SVG/icon-vector.svg" alt="Vector Icon" />
+              <div class="title">
+                <strong>1. Icon Creation</strong><br />
+                <p>Each icon is first created in a Vector format to maintain the same native rendering that SVG uses. Icons are carefully crafted to reduce points and file size. Icons are placed on a grid and the icon artboard grid to keep sizing and resolution consistent.</p>
+              </div>
+          </div>
+          <div class="text-center cell">
+              <img class="share-icon" src="assets/img/SVG/icon-share.svg" alt="Share Icon" />
+              <div class="title">
+                <strong>2. Administrate Library</strong><br />
+                <p>Icons are exported from Illustrator into an individual SVG file for each icon. The icons are then imported into the Design System library hosted at IcoMoon.io.</p>
+              </div>
+          </div>
+          <div class="text-center cell">
+              <img class="download-icon" src="assets/img/SVG/icon-download.svg" alt="Download Icon" />
+              <div class="title">
+                <strong>3. Download Icon Library</strong><br />
+                <p>The icon library is edited and maintained as needed within the IcoMoon app. Next, IcoMoon then generates and exports all of the font files and CSS needed to use the font.</p>                
+              </div>
+          </div>
+          <div class="text-center cell">
+              <img class="code-icon" src="assets/img/SVG/icon-code.svg" alt="Code Icon" />
+              <div class="title">
+                <strong>4. Update Design System</strong><br />
+                <p>When the icon library is up-to-date at IcoMoon, the final library is exported to font files and cascading style sheets and later imported it into the Design System repository.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="large-12 cell heading-container">
+    <h1>How Icons Work</h1>
+  </div>
+  <div class="large-12 cell content-container">
+    <p>Webfont icons work by using CSS to inject a specific icon into the HTML using the CSS content property. It then uses @font-face to load a the referenced icon from the webfont typeface. First, the webfont is refereneced withing a style sheet and then imported and flattened into the overall design system's CSS file. </p>
+    <iframe class="code-block" src="assets/code-examples/code-global--icon-font.html" frameborder="0" allowfullscreen></iframe>
+    <h4>Icon Sizing</h4>
+    <p>
+      Because the icons are used within a font, all icons should be sized by using the CSS font-size property. It is important to use or create a parent class around the icon span to ensure the font-size for <strong>only</strong> that particular icon. Without this parent class, every icon of that type in the entire application will receive the font-size change. It's recommended that a each section have a semantic class name for these scenarios.
+    </p>
+    <h4>Icon Color</h4>
+    <p>
+      Because the icons are used within a font, all icons should be sized by using the CSS color property. It is important to use or create a parent class around the icon span to ensure the color for <strong>only</strong> that particular icon. Without this parent class, every icon of that type in the entire application will receive the color change. It's recommended that a each section have a semantic class name for these scenarios.
+    </p>
+    <h4>Selecting Icons</h4>
+    <p>
+      In most cases a designers should be supplying or indicating which icon to use in different scenarios or states. However, we do realize that there are times when another engineer or designer may need to select an icon. In these cases, it's important to be select an icon that makes sense for the view or state. Here are a few rules to keep in mind when selecting an icon:
+      <ul>
+        <li>Do not use an icon that is globally used (for example the down triangle is used for dropdown menus)</li>
+        <li>Do not pick an icon as a placeholder</li>
+        <li>Does the icon make sense contextually within the interface?</li>
+        <li>Is an icon needed?</li>
+      </ul>
+    </p>
+    <h4>Request an Icon</h4>
+    <p>There are many cases where the right icon isn't available in the library. The UX team is glad to create one for you! Please send us an email to request and icon. Please be sure to provide some screenshots and a brief summary. <a href="mailto:ux-team@ascension.org">ux-team@ascension.org</a></p>
+    
+    <h4>Usage</h4>
+    <p>Using icons and webfonts is very easy using Schema. The only dependency is loading Schema Design System into your web application's HTML Head. This is a standardized step to use all of Schema, so nothing else is needed. Simply apply the icon's CSS class to an HTML span and the icon will appear. It can be sized using the CSS font-size property.</p>
+
+    <iframe class="code-block" src="assets/code-examples/code-global--icon-html.html" frameborder="0" allowfullscreen></iframe>
+
+
+  </div>
+  <div class="large-12 cell heading-container">
+      <h1>Icon Library</h1>
+    </div>
+    <div class="large-12 cell content-container grid-icons">
+      <div class="grid-x grid-padding-x small-up-2 medium-up-2 large-up-4">
+        <div class="text-center cell">
+          <span class="icon-arrow-down container-icon"></span>
+          <div class="title">Down Arrow</div>
+          <code>HTML / CSS Class: <br> icon-arrow-down</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-arrow-up container-icon"></span>
+          <div class="title">Up Arrow</div>
+          <code>HTML / CSS Class: <br>  icon-arrow-down</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-arrow-right container-icon"></span>
+          <div class="title">Right Arrow</div>
+          <code>HTML / CSS Class: <br>  icon-arrow-right</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-arrow-left container-icon"></span>
+          <div class="title">Left Arrow</div>
+          <code>HTML / CSS Class: <br>  icon-arrow-left</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-triangle-down container-icon"></span>
+          <div class="title">Down Triangle</div>
+          <code>HTML / CSS Class: <br>  icon-triangle-down</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-triangle-up container-icon"></span>
+          <div class="title">Up Triangle</div>
+          <code>HTML / CSS Class: <br>  icon-triangle-up</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-triangle-right container-icon"></span>
+          <div class="title">Right Triangle</div>
+          <code>HTML / CSS Class: <br>  icon-triangle-right</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-triangle-left container-icon"></span>
+          <div class="title">Left Triangle</div>
+          <code>HTML / CSS Class: <br>  icon-triangle-left</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-menu-right container-icon"></span>
+          <div class="title">Primary Nav Menu Right</div>
+          <code>HTML / CSS Class: <br>  icon-menu</code>
+        </div>
+        <div class="text-center cell">
+            <span class="icon-menu-left container-icon"></span>
+            <div class="title">Primary Nav Menu Left</div>
+            <code>HTML / CSS Class: <br>  icon-menu</code>
+          </div>
+        <div class="text-center cell">
+          <span class="icon-close container-icon"></span>
+          <div class="title">Close / Dismiss</div>
+          <code>HTML / CSS Class: <br>  icon-close</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-notification container-icon"></span>
+          <div class="title">Notification</div>
+          <code>HTML / CSS Class: <br>  icon-notification</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-help container-icon"></span>
+          <div class="title">Help</div>
+          <code>HTML / CSS Class: <br>  icon-help</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-warning container-icon"></span>
+          <div class="title">Warning</div>
+          <code>HTML / CSS Class: <br>  icon-warning</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-check-mark container-icon"></span>
+          <div class="title">Check Mark</div>
+          <code>HTML / CSS Class: <br>  icon-check-mark</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-plus-sign container-icon"></span>
+          <div class="title">Add/Create/New</div>
+          <code>HTML / CSS Class: <br>  icon-plus-sign</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-pencil container-icon"></span>
+          <div class="title">Edit</div>
+          <code>HTML / CSS Class: <br>  icon-pencil</code>
+        </div>
+        <div class="text-center cell">
+          <span class="icon-calendar container-icon"></span>
+          <div class="title">Calendar</div>
+          <code>HTML / CSS Class: <br>  icon-calendar</code>
+        </div>
+        <div class="text-center cell">
+            <span class="icon-trash-can container-icon"></span>
+            <div class="title">Delete</div>
+            <code>HTML / CSS Class: <br>  icon-trash-can</code>
+        </div>
+        <div class="text-center cell">
+            <span class="icon-dashboard container-icon"></span>
+            <div class="title">Dashboard</div>
+            <code>HTML / CSS Class: <br>  icon-dashboard</code>
+        </div>
+        <div class="text-center cell">
+            <span class="icon-human container-icon"></span>
+            <div class="title">User</div>
+            <code>HTML / CSS Class: <br>  icon-human</code>
+        </div>
+        <div class="text-center cell">
+            <span class="icon-search container-icon"></span>
+            <div class="title">Search</div>
+            <code>HTML / CSS Class: <br>  icon-search</code>
+        </div>
+        <div class="text-center cell">
+            <span class="icon-refund container-icon"></span>
+            <div class="title">Refund</div>
+            <code>HTML / CSS Class: <br>  icon-refund</code>
+        </div>         
+        <div class="text-center cell">
+            <span class="icon-paper-plane container-icon"></span>
+            <div class="title">Send/Complete/Submit</div>
+            <code>HTML / CSS Class: <br>  icon-paper-plane</code>
+        </div>
+        <div class="text-center cell">
+            <span class="icon-ascension-logo container-icon"></span>
+            <div class="title">Ascension Logo</div>
+            <code>HTML / CSS Class: <br>  icon-ascension-logo</code>
+        </div>
+        <div class="text-center cell">
+            <span class="icon-ascensiontech-logo container-icon"></span>
+            <div class="title">Ascension Technologies Logo</div>
+            <code>HTML / CSS Class: <br>  icon-ascensiontech-logo</code>
+        </div>
+</div>
+        

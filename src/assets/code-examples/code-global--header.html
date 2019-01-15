@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="/pages/agroom/at-design-system/assets/css/app.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+      body {
+        background: #ffffff !important;
+      }
+      /* This styles code blocks used for examples. */
+      .ss-code code {
+        display: block;
+        padding: 1rem;
+        overflow-x: scroll;
+      }
+      .copy-button {
+        position: fixed;
+        top: 1em;
+        right:1em;
+      }
+    </style>
+  </head>
+  <body>
+      <button class="button copy-button" data-clipboard-target="#page-1" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="true" data-click-open="false" title="Copied!">
+          Copy
+      </button>
+      <section class="ss-section" id="page-1">
+        <div class="ss-code"><pre><code class="html"><span class="hljs-tag">&lt;<span class="hljs-title">header</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"top-bar-container"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"grid-container"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"top-bar"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"title-bar"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"menuBar"</span> <span class="hljs-attribute">data-hide-for</span>=<span class="hljs-value">"medium"</span> <span class="hljs-attribute">data-toggler</span>=<span class="hljs-value">".expanded"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"responsive-menu menuBar"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-menu-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"top-bar-left"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"logo-link"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-ascensiontech-logo branding--logo"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Web App Design System<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"top-bar-right"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"responsive-menu"</span> <span class="hljs-attribute">data-toggler</span>=<span class="hljs-value">".expanded"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"menu"</span> &gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> {{#<span class="hljs-attribute">ifpage</span> '<span class="hljs-attribute">index</span>'}}<span class="hljs-attribute">class</span>=<span class="hljs-value">"is-active"</span> {{/<span class="hljs-attribute">ifpage</span>}}&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-dashboard"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>One
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-dashboard"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>Two
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown menu"</span> <span class="hljs-attribute">data-dropdown-menu</span> <span class="hljs-attribute">data-disable-hover</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">data-click-open</span>=<span class="hljs-value">"true"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-human"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                                    Resources
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-arrow-down"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"menu"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>schema Support<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Foudation Docs<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Foudation Support<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-dashboard"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>Three
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-dashboard"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>Four
+                        <span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+</code></pre></div>
+      </section>
+    <script src="https://github.ascension.org/pages/agroom/at-design-system/assets/js/app.js"></script>
+    <script>
+        var copyBtn = jQuery('.copy-button');
+        var clipboard = new ClipboardJS('.copy-button');
+        clipboard.on('success', function(e) {
+                  copyBtn.attr('title','Copied!').foundation('show');
+                  setTimeout(function(){
+                      copyBtn.foundation('hide');
+                  }, 3000);
+              });
+              clipboard.on('error', function(e) {
+                  copyBtn.attr('title','Copy Failed').foundation('show');
+              });
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+
+  </body>
+</html>
