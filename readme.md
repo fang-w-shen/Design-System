@@ -47,7 +47,7 @@ npm install foundation-cli --global
 In the command line, navigate to the directory on the computer where the design system should live and clone the repository
 
 ```bash
-git clone https://github.ascension.org/agroom/at-design-system.git
+git clone https://github.ascension.com/fang-w-shen/design-system.git
 ```
 
 Now `cd` to your project name and to start your project run 
@@ -93,10 +93,10 @@ The navigation system for the design system uses a partial template located here
 ### Template System
 Panini uses the [Handlebars](http://handlebarsjs.com/) templating language to build the final flat files. The design system page template system uses a very similar implementation as documented by Zurb and works as follows:
 
-- [Base Layout](https://github.ascension.org/agroom/at-design-system/blob/master/src/layouts/default.html) `src/layouts/default.html` 
-  - [Header](https://github.ascension.org/agroom/at-design-system/blob/master/src/layouts/default.html) `src/partials/header.html`
-  - [Content](https://github.ascension.org/agroom/at-design-system/tree/master/src/pages) `src/pages` each file in this directory is placed in the `{> body}` section of the main template.
-  - [Navigation](https://github.ascension.org/agroom/at-design-system/blob/master/src/partials/navigation.html) `src/partials/navigation.html`
+- [Base Layout](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/layouts/default.html) `src/layouts/default.html` 
+  - [Header](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/layouts/default.html) `src/partials/header.html`
+  - [Content](https://github.ascension.com/fang-w-shen/design-system/tree/master/src/pages) `src/pages` each file in this directory is placed in the `{> body}` section of the main template.
+  - [Navigation](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/partials/navigation.html) `src/partials/navigation.html`
 
 ## Editing Schema
 Remember, Schema *is* the design system itself. When editing the the core of the system the code changes not only affect what is displayed locally, but also every web applicatin using Schema. In other words, be careful! 🙏 ~ Obviously any changes would have to be a pull request and merged with master, but it's still important to understand what is being edited and the impact of any changes.
@@ -106,9 +106,9 @@ As mentioned several times already, Schema uses the Zurb Foundation framework as
 Using the Zurb Framework architecture here's how Schema all comes together:
 
 - Zurb Site
-	- [app.css](https://github.ascension.org/agroom/at-design-system/blob/master/src/assets/scss/app.scss) - Main include file that gets all of Zurb core SASS, Settings, and any other imports we want.
-	- [_settings.scss](https://github.ascension.org/agroom/at-design-system/blob/master/src/assets/scss/_settings.scss) - SASS Variables for customizing Foundation UI out of the box.
-	- [/global/custom_utilities.scss](https://github.ascension.org/agroom/at-design-system/blob/master/src/assets/scss/global/_custom-utilities.scss) - All of the CSS used to customize Foundation to look and work like Schema's design.
+	- [app.css](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/assets/scss/app.scss) - Main include file that gets all of Zurb core SASS, Settings, and any other imports we want.
+	- [_settings.scss](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/assets/scss/_settings.scss) - SASS Variables for customizing Foundation UI out of the box.
+	- [/global/custom_utilities.scss](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/assets/scss/global/_custom-utilities.scss) - All of the CSS used to customize Foundation to look and work like Schema's design.
 
 All of the above files can be edited without damaging the Foundation framework. Any edits to app.css should include only new imports as needed. If any Foundation imports are removed it will break the build.
 
@@ -118,7 +118,7 @@ New pages should only be created to deliver content to the design system documen
 A page is an HTML file with the inner content for that page. This content gets inserted into the `{> body}` default.html layout template and is rendered into a static HTML page.
 
 1. Create a new HTML Page
-2. Change the [title tag](https://github.ascension.org/agroom/at-design-system/blob/master/src/pages/colors.html#L2) at the start of the page 
+2. Change the [title tag](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/pages/colors.html#L2) at the start of the page 
 3. Enter the content for the new page
 4. Save the new page
 
@@ -128,7 +128,7 @@ The moment the new page is saved, the "watch" task in Gulp will re-run the entir
 #### Creating a New Navigation Tab
 The design system's navigation system lives on the left side of the user inteface. It is a fixed position and collapsible panel that is designed to allow the user to navigate the design system but also not interfere with the grid system and live examples in the right side content area of the interface. 
 
-At this time the navigation system is manually maintained. Meaning, for each new page that is created (or any other important content links) the developer needs to manually add the HTML to the [partial file](https://github.ascension.org/agroom/at-design-system/blob/master/src/partials/navigation.html).
+At this time the navigation system is manually maintained. Meaning, for each new page that is created (or any other important content links) the developer needs to manually add the HTML to the [partial file](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/partials/navigation.html).
 
 In the future, we would like a developer help to modify the Gulp file so that it looks for any new page created and then adds a new menu item for each. It's not clear if Handlebars or Panini can accomplish this, but it will certainly help minimize maintainence. 
 
@@ -137,10 +137,10 @@ To read how code examples are generated read [here](#code-examples). To create a
 
 1. Create a new markdown `.md` file and place it in the `/src/styleguide` directory. Name it with something that makes sense.
 	* for some reason Panini requires a "styleguide" directory in order to run, thus the weird folder name.
-2. Add the code you want to display. [Example](https://github.ascension.org/agroom/at-design-system/blob/master/src/styleguide/code-grid--intro.md)
-3. Update the Gulp file following [this pattern](https://github.ascension.org/agroom/at-design-system/blob/master/gulpfile.babel.js#L89). 🤢 This needs to be reworked to convert all files in one directory instead of one by one. Help!
+2. Add the code you want to display. [Example](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/styleguide/code-grid--intro.md)
+3. Update the Gulp file following [this pattern](https://github.ascension.com/fang-w-shen/design-system/blob/master/gulpfile.babel.js#L89). 🤢 This needs to be reworked to convert all files in one directory instead of one by one. Help!
 4. Restart local environment `foundation watch`.
-5. Embed the new code example into a page via an iframe. [Example](https://github.ascension.org/agroom/at-design-system/blob/master/src/pages/grid.html#L26)
+5. Embed the new code example into a page via an iframe. [Example](https://github.ascension.com/fang-w-shen/design-system/blob/master/src/pages/grid.html#L26)
 
 ## Contribution Check List
 If you would like to contribute code to the Schema Design System please follow these steps.
