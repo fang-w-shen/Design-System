@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="/pages/agroom/at-design-system/assets/css/app.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+      body {
+        background: #ffffff !important;
+      }
+      /* This styles code blocks used for examples. */
+      .ss-code code {
+        display: block;
+        padding: 1rem;
+        overflow-x: scroll;
+      }
+      .copy-button {
+        position: fixed;
+        top: 1em;
+        right:1em;
+      }
+    </style>
+  </head>
+  <body>
+      <button class="button copy-button" data-clipboard-target="#colors" data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="true" data-click-open="false" title="Copied!">
+          Copy
+      </button>
+      <section class="ss-section" id="colors">
+        <h1>Colors</h1><p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>_settings.scss</code></p>
+
+<hr>
+<div class="grid-x grid-padding-x small-up-2 medium-up-4 large-up-4">
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-primary color-swatch"></span>
+      <code>$primary-color</code>
+    </div>
+  </div>
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-secondary"></span>
+      <code>$secondary-color</code>
+    </div>
+  </div>
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-success"></span>
+      <code>$success-color</code>
+    </div>
+  </div>
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-warning"></span>
+      <code>$warning-color</code>
+    </div>
+  </div>
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-alert"></span>
+      <code>$alert-color</code>
+    </div>
+  </div>
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-light-gray"></span>
+      <code>$light-gray</code>
+    </div>
+  </div>
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-medium-gray"></span>
+      <code>$medium-gray</code>
+    </div>
+  </div>
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-dark-gray"></span>
+     <code>$dark-gray</code>
+    </div>
+  </div>
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-black"></span>
+      <code>$black</code>
+    </div>
+  </div>
+  <div class="text-center cell">
+    <div class="color-block">
+      <span class="bg-white" style="border: 1px solid #DDD"></span>
+      <code>$white</code>
+    </div>
+  </div>
+</div>
+      </section>
+    <script src="https://github.ascension.org/pages/agroom/at-design-system/assets/js/app.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+    <script>
+        var copyBtn = jQuery('.copy-button');
+        var clipboard = new ClipboardJS('.copy-button');
+        clipboard.on('success', function(e) {
+                  copyBtn.attr('title','Copied!').foundation('show');
+                  setTimeout(function(){
+                      copyBtn.foundation('hide');
+                  }, 3000);
+              });
+              clipboard.on('error', function(e) {
+                  copyBtn.attr('title','Copy Failed').foundation('show');
+              });
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
+
+  </body>
+</html>
