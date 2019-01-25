@@ -1,87 +1,87 @@
 /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
+/******/  // The module cache
+/******/  var installedModules = {};
 /******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+/******/  // The require function
+/******/  function __webpack_require__(moduleId) {
 /******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
+/******/    // Check if module is in cache
+/******/    if(installedModules[moduleId]) {
+/******/      return installedModules[moduleId].exports;
+/******/    }
+/******/    // Create a new module (and put it into the cache)
+/******/    var module = installedModules[moduleId] = {
+/******/      i: moduleId,
+/******/      l: false,
+/******/      exports: {}
+/******/    };
 /******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/    // Execute the module function
+/******/    modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 /******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
+/******/    // Flag the module as loaded
+/******/    module.l = true;
 /******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/    // Return the exports of the module
+/******/    return module.exports;
+/******/  }
 /******/
 /******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/  // expose the modules object (__webpack_modules__)
+/******/  __webpack_require__.m = modules;
+/******/
+/******/  // expose the module cache
+/******/  __webpack_require__.c = installedModules;
+/******/
+/******/  // define getter function for harmony exports
+/******/  __webpack_require__.d = function(exports, name, getter) {
+/******/    if(!__webpack_require__.o(exports, name)) {
+/******/      Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/    }
+/******/  };
+/******/
+/******/  // define __esModule on exports
+/******/  __webpack_require__.r = function(exports) {
+/******/    if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/      Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/    }
+/******/    Object.defineProperty(exports, '__esModule', { value: true });
+/******/  };
+/******/
+/******/  // create a fake namespace object
+/******/  // mode & 1: value is a module id, require it
+/******/  // mode & 2: merge all properties of value into the ns
+/******/  // mode & 4: return value when already ns object
+/******/  // mode & 8|1: behave like require
+/******/  __webpack_require__.t = function(value, mode) {
+/******/    if(mode & 1) value = __webpack_require__(value);
+/******/    if(mode & 8) return value;
+/******/    if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/    var ns = Object.create(null);
+/******/    __webpack_require__.r(ns);
+/******/    Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/    if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/    return ns;
+/******/  };
+/******/
+/******/  // getDefaultExport function for compatibility with non-harmony modules
+/******/  __webpack_require__.n = function(module) {
+/******/    var getter = module && module.__esModule ?
+/******/      function getDefault() { return module['default']; } :
+/******/      function getModuleExports() { return module; };
+/******/    __webpack_require__.d(getter, 'a', getter);
+/******/    return getter;
+/******/  };
+/******/
+/******/  // Object.prototype.hasOwnProperty.call
+/******/  __webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/  // __webpack_public_path__
+/******/  __webpack_require__.p = "";
+/******/
+/******/
+/******/  // Load entry module and return exports
+/******/  return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -12588,8 +12588,8 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
     /**
      * Create key-value caches of limited size
      * @returns {function(string, object)} Returns the Object data after storing it on itself with
-     *	property name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)
-     *	deleting the oldest entry
+     *  property name the (space-suffixed) string and (if the cache is larger than Expr.cacheLength)
+     *  deleting the oldest entry
      */
 
 
@@ -13324,14 +13324,14 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
         },
         "CHILD": function CHILD(match) {
           /* matches from matchExpr["CHILD"]
-          	1 type (only|nth|...)
-          	2 what (child|of-type)
-          	3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
-          	4 xn-component of xn+y argument ([+-]?\d*n|)
-          	5 sign of xn-component
-          	6 x of xn-component
-          	7 sign of y-component
-          	8 y of y-component
+            1 type (only|nth|...)
+            2 what (child|of-type)
+            3 argument (even|odd|\d*|\d*n([+-]\d+)?|...)
+            4 xn-component of xn+y argument ([+-]?\d*n|)
+            5 sign of xn-component
+            6 x of xn-component
+            7 sign of y-component
+            8 y of y-component
           */
           match[1] = match[1].toLowerCase();
 
@@ -14710,23 +14710,23 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
   /*
    * Create a callback list using the following parameters:
    *
-   *	options: an optional list of space-separated options that will change how
-   *			the callback list behaves or a more traditional option object
+   *  options: an optional list of space-separated options that will change how
+   *      the callback list behaves or a more traditional option object
    *
    * By default a callback list will act like an event callback list and can be
    * "fired" multiple times.
    *
    * Possible options:
    *
-   *	once:			will ensure the callback list can only be fired once (like a Deferred)
+   *  once:     will ensure the callback list can only be fired once (like a Deferred)
    *
-   *	memory:			will keep track of previous values and will call any callback added
-   *					after the list has been fired right away with the latest "memorized"
-   *					values (like a Deferred)
+   *  memory:     will keep track of previous values and will call any callback added
+   *          after the list has been fired right away with the latest "memorized"
+   *          values (like a Deferred)
    *
-   *	unique:			will ensure a callback can only be added once (no duplicate in the list)
+   *  unique:     will ensure a callback can only be added once (no duplicate in the list)
    *
-   *	stopOnFalse:	interrupt callings when a callback returns false
+   *  stopOnFalse:  interrupt callings when a callback returns false
    *
    */
 
@@ -15463,15 +15463,15 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
     }
   };
   var dataPriv = new Data();
-  var dataUser = new Data(); //	Implementation Summary
+  var dataUser = new Data(); // Implementation Summary
   //
-  //	1. Enforce API surface and semantic compatibility with 1.9.x branch
-  //	2. Improve the module's maintainability by reducing the storage
-  //		paths to a single mechanism.
-  //	3. Use the same single mechanism to support "private" and "user" data.
-  //	4. _Never_ expose "private" data to user code (TODO: Drop _data, _removeData)
-  //	5. Avoid exposing implementation details on user objects (eg. expando properties)
-  //	6. Provide a clear path for implementation upgrade to WeakMap in 2014
+  //  1. Enforce API surface and semantic compatibility with 1.9.x branch
+  //  2. Improve the module's maintainability by reducing the storage
+  //    paths to a single mechanism.
+  //  3. Use the same single mechanism to support "private" and "user" data.
+  //  4. _Never_ expose "private" data to user code (TODO: Drop _data, _removeData)
+  //  5. Avoid exposing implementation details on user objects (eg. expando properties)
+  //  6. Provide a clear path for implementation upgrade to WeakMap in 2014
 
   var rbrace = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
       rmultiDash = /[A-Z]/g;
@@ -20969,7 +20969,7 @@ Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
     !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
       return jQuery;
     }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+        __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   }
 
   var // Map over jQuery in case of overwrite
@@ -21053,9 +21053,9 @@ module.exports = function (module) {
  */
 (function webpackUniversalModuleDefinition(root, factory) {
   if (( false ? undefined : _typeof(exports)) === 'object' && ( false ? undefined : _typeof(module)) === 'object') module.exports = factory();else if (true) !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else {}
+        __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+        (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+        __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else {}
 })(this, function () {
   return (
     /******/
@@ -21610,7 +21610,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#menuBar a').each(function () {
   var pathname = window.location.pathname;
 
   if (pathname.match(myHref)) {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu').foundation('down', jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().parent());
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().parent().addClass('is-active').css('display', 'block');
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).parent().parent().prev().attr('aria-expanded', 'true');
   }
 });
 
@@ -21623,7 +21624,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('#menuBar a').each(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\fshen001\workspace\design-system\src\assets\js\app.js */"./src/assets/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\fshen001\workspace\at-design-system\src\assets\js\app.js */"./src/assets/js/app.js");
 
 
 /***/ })
