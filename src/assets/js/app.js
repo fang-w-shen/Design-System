@@ -62,6 +62,7 @@ $('#menuBar a').each(function(){
   var myHref= $(this).attr('href');
   var pathname = window.location.pathname;
   if(pathname.match(myHref)) {
-    $('.menu').foundation('down', $(this).parent().parent());
+    $(this).parent().parent().addClass('is-active').css('display','block');
+    $(this).parent().parent().prev().attr('aria-expanded','true');
   }
 });
